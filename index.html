@@ -62,32 +62,7 @@
     </header>
 
     <main>
-       <!-- Modal window -->
-    <form class="form-input">
-      <div class="form-box">
-        <p class="form-header">Leave your contacts and we will call you back</p>
-        <label class="form-name">
-         Name
-          <input type="text" name="user-name" />
-        </label>
-        <label class="form-phone">
-          Phone
-          <input type="tel" name="tel" />
-        </label>
-        <label class="form-email">
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label class="form-comment"></label>
-          Comment
-          <textarea name="comment" rows="5" placeholder="Text input"></textarea>
-        </label>
-        <label class="form-checkbox"
-          >I accept the terms and conditions of the <span><a class="form-a" href="">Privacy Policy</a></span>
-          <input type="email" name="email" />
-        </label>
-      </div>
-    </form>
+   
       <!-- Section 1. Hero image -->
       <section class="hero">
         <div class="container hero-cont">
@@ -475,8 +450,57 @@
             </li>
           </ul>
         </div>
+      <div class="footer-subscribe">
+        <p>ASDSDFSFSFS</p>
+        <form class="subscribe-form" name="subscribe">
+          <input class="subscribe-fild" 
+          type="email" placeholder="email" />
+        </form>
+        <button class="footer-button" type="submit">submit</button>
+      </div>
       </div>
     </footer>
-   
+       <!-- Modal window -->
+    <div class="backdrop is-open">
+      <div class="modal">
+          <p class="form-header">Leave your contacts and we will call you back</p>
+          <form class="form-input">
+          <div class="form-box">
+              <label class="form-label">
+               <p>Name</p>
+               <input class="input-field" type="text" name="user-name" />
+              </label>
+              
+          </div>
+          <div class="form-box">
+              <label class="form-label">
+                <p>Phone</p>
+                <input class="input-field" type="tel" name="tel" />
+              </label>
+          </div>
+          <div class="form-box">
+              <label class="form-label">
+                <p>Email</p>
+                <input class="input-field" type="email" name="email" />
+              </label>
+          </div>
+          <div class="form-box">
+              <label class="form-label"></label>
+                <p>Comment</p>
+                <textarea class="input-field" name="comment" rows="5" placeholder="Text input"></textarea>
+              </label>
+          </div>
+          <div class="form-box checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">
+                I accept the terms and conditions of the <span><a class="form-a" href="">Privacy Policy</a></span>
+              </label>
+          </div>
+          
+          </form>
+          <button class="form-button" type="submit">Send</button>
+      </div>
+    </div>
+
   </body>
 </html>
