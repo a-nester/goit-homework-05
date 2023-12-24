@@ -62,12 +62,11 @@
     </header>
 
     <main>
-   
       <!-- Section 1. Hero image -->
       <section class="hero">
         <div class="container hero-cont">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="main-button" type="button">Order Service</button>
         </div>
       </section>
       <!-- Section 2. Benefits -->
@@ -450,62 +449,106 @@
             </li>
           </ul>
         </div>
-      <div class="footer-subscribe">
-        <p>ASDSDFSFSFS</p>
-        <form class="subscribe-form" name="subscribe">
-          <input class="subscribe-fild" 
-          type="email" placeholder="email" />
-        </form>
-        <button class="footer-button" type="submit">submit</button>
-      </div>
+        <div class="footer-subscribe">
+          <p>ASDSDFSFSFS</p>
+          <form class="subscribe-form" name="subscribe">
+            <input class="subscribe-fild" type="email" placeholder="email" />
+          </form>
+          <button class="footer-button" type="submit">submit</button>
+        </div>
       </div>
     </footer>
-       <!-- Modal window -->
+    <!-- Modal window -->
     <div class="backdrop is-open">
       <div class="modal">
-          <p class="form-header">Leave your contacts and we will call you back</p>
-          <form class="form-input">
+        <button class="modal-button" type="button">
+          <svg class="modal-button-image" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <p class="form-header">Leave your contacts and we will call you back</p>
+
+        <form class="form-input">
           <div class="form-box">
-              <label class="form-label" for="user-name">
-               <p>Name</p></label>
-               <div class="form-input-field">
-                 <input
-                 class="input-field"
-                 type="text"
-                 id="user-name"
-                 name="user-name" />
-               </div>
-              
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-input-field">
+              <input
+                class="input-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
           </div>
+
           <div class="form-box">
-              <label class="form-label">
-                <p>Phone</p>
-                <input class="input-field" type="tel" name="tel" />
-              </label>
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="form-input-field">
+              <input
+                class="input-field"
+                type="text"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
+
           <div class="form-box">
-              <label class="form-label">
-                <p>Email</p>
-                <input class="input-field" type="email" name="email" />
-              </label>
+            <label class="form-label" for="user-email">Email</label>
+            <div class="form-input-field">
+              <input
+                class="input-field"
+                type="text"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
+
           <div class="form-box">
-              <label class="form-label"></label>
-                <p>Comment</p>
-                <textarea class="input-field" name="comment" rows="5" placeholder="Text input"></textarea>
-              </label>
+            <label class="form-label"
+              >Comment
+              <!-- <div class="form-textarea-field"> -->
+              <textarea
+                class="textarea-field"
+                name="user-comment"
+                rows="5"
+                placeholder="Textinput"
+              ></textarea>
+            </label>
+            <!-- </div> -->
           </div>
-          <div class="form-box checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox">
-                I accept the terms and conditions of the <span><a class="form-a" href="">Privacy Policy</a></span>
-              </label>
-          </div>
-          
-          </form>
-          <button class="form-button" type="submit">Send</button>
+
+          <!-- <div class="form-box checkbox"> -->
+          <label class="agreement">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              value="false"
+            />
+            <span class="agreement-checkbox">
+              <svg class="agreement-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-agreement"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="form-a" href="">Privacy Policy</a>
+          </label>
+          <!-- </div> -->
+        </form>
+        <button class="main-button send-btn" type="submit">Send</button>
       </div>
     </div>
-
   </body>
 </html>
