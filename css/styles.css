@@ -496,6 +496,11 @@ transition-property: color;
     flex-direction: column;
 }
 
+.subscribe-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 .subtext {
     margin-bottom: 16px;
     color: #FFF;
@@ -507,11 +512,6 @@ transition-property: color;
 
 .subscribe-form {
     margin-right: 24px;
-}
-
-.subscribe-wrap {
-    display: flex;
-    flex-direction: row;
 }
 
 .subscribe-fild {
@@ -538,10 +538,11 @@ transition-property: color;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     gap: 16px;
     border-radius: 4px;
     background: #4D5AE5;
-    border: 1px solid #4D5AE5;
+    border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -562,6 +563,7 @@ background-color: var(--OCEAN, #404BBF);
 
 .send-icon {
     fill: #FFF;
+    margin-left: 16px;
 }
 /* Modal window */
 
