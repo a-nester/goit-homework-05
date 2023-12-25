@@ -496,10 +496,7 @@ transition-property: color;
     flex-direction: column;
 }
 
-.subscribe-wrap {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .subtext {
     margin-bottom: 16px;
