@@ -795,7 +795,7 @@ background-color: var(--OCEAN, #404BBF);
 .checkbox:checked + .agreement > .agreement-span {
     background-color: #404BBF;
     border: none;
-    
+    fill: #F4F4FD;
 }
 
 .checkbox:checked + .agreement .agreement-icon { 
