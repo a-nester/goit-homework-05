@@ -757,7 +757,7 @@ background-color: var(--OCEAN, #404BBF);
     user-select: none;
 }
 
-/* .agreement-checkbox {
+.checkbox {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -766,7 +766,7 @@ background-color: var(--OCEAN, #404BBF);
     border-radius: 4px;
     border: 1px solid #2e2f4211;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 .agreement-span {
     display: inline-flex;
@@ -792,15 +792,15 @@ background-color: var(--OCEAN, #404BBF);
         text-decoration-line: underline;
 }
 
-.checkbox:checked + .agreement-span {
+.checkbox:checked + .agreement > .agreement-span {
     background-color: #404BBF;
     border: none;
-    fill: #F4F4FD;
+    
 }
 
-.checkbox:checked + .agreement-span > .agreement-icon { 
+.checkbox:checked + .agreement .agreement-icon { 
     opacity: 1;
-    fill: #FFF;
+    fill: #F4F4FD;
 }
 
 .send-btn {
