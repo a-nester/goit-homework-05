@@ -75,7 +75,7 @@ img {
 .container-nav {
     display: flex;
     flex-direction: row;
-    /* margin-left: 156px; */
+    /* margin-left: 0; */
     align-items: center;
 } 
 .logo {
@@ -428,7 +428,7 @@ transition-property: color;
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 156px;
+    padding: 100px 0;
 }
 
 .footer .container {
@@ -459,8 +459,8 @@ transition-property: color;
 }
 
 .footer-social {
-    display: inline-block;
-    margin-right: 80px;
+    /* display: inline-block; */
+    margin-right: auto;
 }
 
 .footer .container {
@@ -495,8 +495,6 @@ transition-property: color;
     display: flex;
     flex-direction: column;
 }
-
-
 
 .subtext {
     margin-bottom: 16px;
@@ -546,7 +544,6 @@ transition-property: color;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    gap: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -609,7 +606,6 @@ background-color: var(--OCEAN, #404BBF);
     transform: translate(-50%,-50%) scale(1);
     width: 408px;
     min-height: 584px;
-    border: 1px solid #2E2F42;
     border-radius: 4px;
     background-color: #FCFCFC;
     padding: 72px 24px;
@@ -662,7 +658,7 @@ background-color: var(--OCEAN, #404BBF);
 }
 
 .form-input {
-    margin-bottom: 24px;
+    
 }
 
 .form-box {
@@ -679,8 +675,6 @@ background-color: var(--OCEAN, #404BBF);
     color: #8E8F99;
     font-family: Roboto;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.17em;
     letter-spacing: 0.04em;
 }
@@ -697,6 +691,9 @@ background-color: var(--OCEAN, #404BBF);
     border: 1px solid rgba(46, 47, 66, 0.40);
     width: 100%;
     height: 40px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     outline: transparent;
     padding-left: 38px;
     background-color: transparent;
@@ -768,6 +765,10 @@ background-color: var(--OCEAN, #404BBF);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox:focus + .agreement > .agreement-span {
+    border-color: #4D5AE5;
+}
+
 .agreement-span {
     display: inline-flex;
     align-items: center;
@@ -775,6 +776,7 @@ background-color: var(--OCEAN, #404BBF);
     fill: transparent;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -804,26 +806,6 @@ background-color: var(--OCEAN, #404BBF);
 }
 
 .send-btn {
-    margin-left: 96px;
+    margin: auto;
 }
-/* .form-button {
-    width: 169px;
-    height: 56px;
-    background-color: #4D5AE5;
-    border-color: #4D5AE5;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--WHITE, #FFF);
-        text-align: center;
-        /* Button Text 
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5em;
-        
-        letter-spacing: 0.04em;
-        padding: 16px 32px;
-        margin-left: 120px;
-        margin-top: 24px;
-} */
+
